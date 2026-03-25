@@ -8,7 +8,7 @@ USE AdventureWorks2025;
 -- =====================================================
 
 WITH rfm_base AS (
--- CTE 1: Calculamos Recency, Frequency y Monetary por cliente
+-- CTE 1: Se calcula Recency, Frequency y Monetary por cliente
 -- Usamos MAX(OrderDate) del dataset como fecha de referencia
     SELECT
         c.CustomerID,
@@ -21,7 +21,7 @@ WITH rfm_base AS (
     GROUP BY c.CustomerID
 ),
 rfm_scored AS (
--- CTE 2: Asignamos puntaje 1-5 a cada métrica con NTILE
+-- CTE 2: Se Asigna puntaje 1-5 a cada métrica con NTILE
 -- Score 1 = peor rendimiento, Score 5 = mejor rendimiento
     SELECT *,
         NTILE(5) OVER (ORDER BY recency_days DESC)  AS r_score,
@@ -41,7 +41,7 @@ churn_risk AS (
         END                                          AS churn_segment
     FROM rfm_scored
 )
--- RESULTADO FINAL: Vista completa por cliente con métricas avanzadas
+-- RESULTADO FINAL: Vista completa por cliente
 SELECT
     CustomerID,
     recency_days,
