@@ -1,0 +1,47 @@
+{
+  "name": "Churn Intelligence Dark",
+  "dataColors": [
+    "#3B82F6",
+    "#F87171",
+    "#FBBF24",
+    "#34D399",
+    "#A78BFA",
+    "#60A5FA",
+    "#F472B6"
+  ],
+  "background": "#0F1117",
+  "foreground": "#1A1D27",
+  "tableAccent": "#3B82F6",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{"color": {"solid": {"color": "#1A1D27"}}}],
+        "border": [{"show": true, "color": {"solid": {"color": "#2A2D3A"}}}],
+        "title": [{
+          "fontColor": {"solid": {"color": "#9CA3AF"}},
+          "fontSize": 11
+        }]
+      }
+    },
+    "card": {
+      "*": {
+        "calloutValue": [{"color": {"solid": {"color": "#FFFFFF"}}, "fontSize": 24}],
+        "categoryLabel": [{"color": {"solid": {"color": "#6B7280"}}, "fontSize": 10}],
+        "background": [{"color": {"solid": {"color": "#1A1D27"}}}]
+      }
+    },
+    "donutChart": {
+      "*": {
+        "legend": [{"fontColor": {"solid": {"color": "#9CA3AF"}}}],
+        "dataLabels": [{"color": {"solid": {"color": "#E5E7EB"}},"fontSize": 10}]
+      }
+    },
+    "barChart": {
+      "*": {
+        "categoryAxis": [{"fontColor": {"solid": {"color": "#6B7280"}}, "fontSize": 10}],
+        "valueAxis": [{"fontColor": {"solid": {"color": "#6B7280"}}, "fontSize": 10}],
+        "dataLabels": [{"color": {"solid": {"color": "#E5E7EB"}}, "fontSize": 10}]
+      }
+    }
+  }
+}
