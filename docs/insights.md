@@ -43,13 +43,3 @@ before a win-back campaign becomes unprofitable.
 3. Set up weekly automated RFM refresh via SQL stored procedure
 4. Build alert system when customers drop from LOYAL to 
    MEDIUM RISK (early intervention is more effective)
-```
-
----
-
-Ahora guarda los 4 archivos en la carpeta `docs/` del repositorio y abre **GitHub Desktop**:
-
-**Commit message:**
-```
-Add project documentation - business case, methodology, 
-data dictionary and insights
