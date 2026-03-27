@@ -1,4 +1,4 @@
-# Methodology — RFM Analysis
+# Methodology: RFM Analysis
 
 ## What is RFM?
 RFM is a proven customer segmentation framework used by 
